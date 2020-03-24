@@ -11,6 +11,8 @@ O padrão de arquitetura Model-View-ViewModel (MVVM), consiste em três camadas:
 - **View-models** convertem e formatão os dados do model  de forma a serem utilizados na apresentação da view.
 - **Views** responsáveis por apresentar elementos visuais e realizar controles de exibição.
 
+ Ué, você deve estar pensando, e o **View Controller**, então eles existem no padrão MVVM, mas sua fução é minimizada.
+ 
 ## Código Exemplo
  */
 
