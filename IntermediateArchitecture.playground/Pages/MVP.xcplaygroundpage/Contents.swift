@@ -18,5 +18,4 @@ O padrão de arquitetura Model-View-Presenter (MVP), consiste em três camadas: 
 
 import PlaygroundSupport
 
-let view = CarViewController()
-PlaygroundPage.current.liveView = view
+PlaygroundPage.current.liveView = CarTableViewController()

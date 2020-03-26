@@ -3,16 +3,16 @@ import UIKit
 public class CarroViewModel {
     
     private let carro: Carro
-    private let caledar: Calendar
+    private let calendar: Calendar
     
     var modelo: String {
         return carro.modelo
     }
     
     var anos: String {
-        let dataAtual = caledar.startOfDay(for: Date())
-        let dataFabricacao = caledar.startOfDay(for: carro.ano)
-        let dataComponets = caledar.dateComponents([.year], from: dataFabricacao, to: dataAtual)
+        let dataAtual = calendar.startOfDay(for: Date())
+        let dataFabricacao = calendar.startOfDay(for: carro.ano)
+        let dataComponets = calendar.dateComponents([.year], from: dataFabricacao, to: dataAtual)
        
         guard let anos = dataComponets.year else { return "-"}
         
@@ -29,7 +29,7 @@ public class CarroViewModel {
     
     public init(carro: Carro) {
         self.carro = carro
-        self.caledar = Calendar(identifier: .iso8601)
+        self.calendar = Calendar(identifier: .iso8601)
     }
 }
 

@@ -1,5 +1,4 @@
 import UIKit
-import Foundation
 
 public class CarroView: UIView {
     
