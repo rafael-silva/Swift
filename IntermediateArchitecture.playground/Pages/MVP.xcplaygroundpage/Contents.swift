@@ -16,6 +16,7 @@ O padrão de arquitetura Model-View-Presenter (MVP), consiste em três camadas: 
 ## Código Exemplo
 */
 
-import Foundation
+import PlaygroundSupport
 
-var str = "Hello, playground"
+let view = CarViewController()
+PlaygroundPage.current.liveView = view
